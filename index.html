@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Semanticly similar words</title>
+  
+  <!-- Custom CSS Files -->
+  <link href="assets/main.css" rel="stylesheet" />
+
+  <script src="data/wordvecs25000.js"></script>
+  <script src="assets/word2Vec.js"></script>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <h3>Find Similar Words with Given Similarity</h3>
+      <p>Please input a word and enter a similarity measure. 
+        The system will then provide a list of words that are similar to given word 
+        as your chosen similarity measure. 
+        </p>
+      <input placeholder="Starting Word" type="text" name="word" id="word">
+      <input placeholder="Similarity Measure e.g. 25.69" type="number" name="similarity" id="similarity">
+      
+      <input type="button" value="List words" id="get-words">
+      <br>
+      <div id="sim-words">
+        <p> </p>
+        <p> </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h3>List Similar Words</h3>
+      <p>Input a word to find words with similar vectors.</p>
+      <input placeholder="Target word" type="text" id="target-word">
+      
+      <input type="button" value="List words" id="list-sim-btn">
+      <br>
+      <div id="sim-words-list">
+        <p> </p>
+        <p> </p>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>
