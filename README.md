@@ -27,6 +27,7 @@ Please find the demo at https://simgeekiz.github.io/Find-Semanticaly-Similar-Wor
     ```shell
     $ pip install jupyter
     $ pip install gensim
+    $ pip install flask
     ```
 
 
